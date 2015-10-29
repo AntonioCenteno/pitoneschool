@@ -14,7 +14,7 @@ if a==b and b==c:
     exit()
 
 # ascendente o descendente
-if a<b and b<c and c>b:
+if a<=b and b<=c and c>b:
     print "orden ascendente"
 else:
     print "orden descendente"
