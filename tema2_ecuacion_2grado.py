@@ -2,8 +2,6 @@
 # -*- coding: latin-1 -*-
 
 # Ejercicio 4 - Ecuacion de segundo grado
-
-
 a = float(input('Valor de a: '))
 b = float(input('Valor de b: '))
 c = float(input('Valor de c: '))
@@ -11,10 +9,10 @@ print "ecuacion  ",a,"*x^2 + ",b,"*x + ", c, " = 0"
 #calculando raices
 raiz = float(b**2-(4*a*c))
 if raiz < 0:
+    print raiz
     print('La ecuacion no tiene solucion')
 
 elif raiz == 0:
-    print "Raiz cero"
     s = float(-b/2*a)
     print ('Una solucion: ',s)
 

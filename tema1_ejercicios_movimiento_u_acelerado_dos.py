@@ -43,7 +43,7 @@ if raiz>0:
     t=round(math.sqrt(raiz))
 else:
     t=round(math.sqrt(abs(raiz)))
-# necesito comprobar esto 
+# necesito comprobar esto
 t=((-V_i)+((V_i**2)-(4*(-a*D/2)))**(0.5))/a
 
 print "V_i =",V_i,"a =",a, "D =",D
