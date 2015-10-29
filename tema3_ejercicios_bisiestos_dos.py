@@ -3,7 +3,6 @@
 
 # Ejercicios Python
 # Ejercicio 7.- Escribir un programa que lea un año y determine si es o no bisiesto.
-
 # Ejercicio 8.-
 
 '''Modificar el programa anterior para que además lea el número de un mes
@@ -18,23 +17,24 @@ es_divisible_por_400 = (anyo % 400 == 0)
 bisiesto = (anyo % 4 == 0) and (anyo % 100 != 0) or (anyo % 400 == 0)
 
 par = mes%2==0
-impar=mes%3==0
+impar = mes%3==0
 
-if (par) and mes != 2:
-    dias=30
-elif impar:
-    dias=31
+if par and mes != 2:
+    dias = 30
+
+elif par and mes == 2:
+    dias = 28
+
+elif bisiesto and mes == 2:
+    dias = 29
+
 else:
-    dias=28
-
-print par , impar
+    dias = 31
 
 if es_divisible_por_4 and not es_divisible_por_100:
-        dias=29
         print anyo, " es BISIESTO ya que es divisible por 4 y no divisible por 100 "
 
 if es_divisible_por_4 and es_divisible_por_100 and es_divisible_por_400:
-        dias=29
         print anyo, " es BISIESTO ya que es divisible por 4, por 100 y por 400"
 
 if es_divisible_por_4 and es_divisible_por_100 and not es_divisible_por_400:
