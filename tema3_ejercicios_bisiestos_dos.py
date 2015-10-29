@@ -17,7 +17,7 @@ es_divisible_por_400 = (anyo % 400 == 0)
 bisiesto = (anyo % 4 == 0) and (anyo % 100 != 0) or (anyo % 400 == 0)
 
 par = mes%2==0
-impar = mes%3==0
+impar = mes%2!=0
 
 if par and mes != 2:
     dias = 30
@@ -44,5 +44,3 @@ if not es_divisible_por_4:
         print anyo, " NO es BISIESTO ya que no es divisible por 4"
 
 print "Dias del mes %i: %i" %( mes, dias)
-
-
