@@ -16,14 +16,16 @@ rueda_c = float(raw_input("Indica la presion de la rueda trasera derecha (0.00)"
 rueda_d = float(raw_input("Indica la presion de la rueda trasera izquierda (0.00)"))
 
 # eje delantero
-if (rueda_a >= PSI_MIN and rueda_a <= PSI_MAX) and (abs(rueda_b-rueda_a) <= UMBRAL_PSI):
+if (rueda_a >= PSI_MIN and rueda_a <= PSI_MAX):
     if (rueda_b >= PSI_MIN and rueda_b <= PSI_MAX):
-        correcto_delanteras = True
+        if (abs(rueda_b-rueda_a) <= UMBRAL_PSI):
+            correcto_delanteras = True
 
 # eje trasero
-if (rueda_c >= PSI_MIN and rueda_c <= PSI_MAX)  and (abs(rueda_d-rueda_c) <= UMBRAL_PSI):
+if (rueda_c >= PSI_MIN and rueda_c <= PSI_MAX):
     if (rueda_d >= PSI_MIN and rueda_d <= PSI_MAX):
-        correcto_traseras = True
+        if (abs(rueda_d-rueda_c) <= UMBRAL_PSI):
+            correcto_traseras = True
 
 if correcto_delanteras and correcto_traseras:
     print "Las presiones son CORRECTAS"
