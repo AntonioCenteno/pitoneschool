@@ -4,9 +4,9 @@
 # Ejercicios Python
 # Ejercicio 2.- Escribir un programa que lea tres números enteros e indique si están o no en orden ascendente.
 
-a=int(raw_input('a='))
-b=int(raw_input('b='))
-c=int(raw_input('c='))
+a=abs(int(raw_input('a=')))
+b=abs(int(raw_input('b=')))
+c=abs(int(raw_input('c=')))
 
 # Ni ascendente ni descendente
 if a==b and b==c:
@@ -14,7 +14,7 @@ if a==b and b==c:
     exit()
 
 # ascendente o descendente
-if a<=b and b<=c and c>b:
+if c>b:
     print "orden ascendente"
 else:
     print "orden descendente"
