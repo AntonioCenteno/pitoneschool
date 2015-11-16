@@ -12,7 +12,7 @@ suma = 0
 
 while numeros >= 0:
     numeros = int(raw_input('Dame el numero:'))
-    if numeros >=   0:
+    if numeros >=0:
         contador = contador + 1
         suma = suma + numeros
 
