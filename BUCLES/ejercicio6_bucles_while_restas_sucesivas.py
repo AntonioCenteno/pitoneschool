@@ -10,11 +10,15 @@ Resto: 17 % 3 = 2
 '''
 a = int(raw_input('Dame el numero A:'))
 b = int(raw_input('Dame el numero B:'))
-
 resto=0
 cont=0
 a1=a
 b1=b
+
+hacer_resta = a>=0 and b>0
+
+if (hacer_resta == False):
+    exit('Esperamos la condicion a>=0 y b>0, no se cumple')
 
 while a>=b:
     a=a-b
