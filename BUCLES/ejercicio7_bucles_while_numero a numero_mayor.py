@@ -9,22 +9,17 @@ Ejemplo de salida para la entrada: 100 25 36 596 3 15 0
 El mayor número es 596 y se proporcionó en la posición 4
 
 '''
-
-entrada = int(raw_input('Dame el numero A:'))
+numero =''
 pos = 0
 mayor = 0;
-numeros = []
-maxpos = 0
 
-while entrada !=0:
-    entrada = int(raw_input('Dame el numero A:'))
-    pos = pos + 1
-    numeros.append(entrada)
-    if (max(numeros)):
-        maxpos = pos
+while numero != 0:
+    numero = int(input('Numero (Con 0 terminas): '))
+    if numero > mayor:
+        pos = pos +1
+        mayor = numero
 
-print str(numeros)
-print "El mayor numero que se proporciono es ", max(numeros), "en la posicion ", pos
+print "El mayor numero que se proporciono es ", mayor , "en la posicion ", pos
 
 
 
