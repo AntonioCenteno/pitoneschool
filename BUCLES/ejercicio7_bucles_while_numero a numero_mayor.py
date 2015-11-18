@@ -14,7 +14,7 @@ pos = 0
 mayor = 0;
 
 while numero != 0:
-    numero = int(input('Numero (Con 0 terminas): '))
+    numero = int(raw_input('Numero (Con 0 terminas): '))
     if numero > mayor:
         pos = pos +1
         mayor = numero
