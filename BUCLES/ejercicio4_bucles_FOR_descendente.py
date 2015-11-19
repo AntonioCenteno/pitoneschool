@@ -11,7 +11,6 @@ Salida del programa:
 …
 10
 '''
-n=abs(int(raw_input("Numero descendente: ")))
 
 for i in range(10,n+1):
     print n
