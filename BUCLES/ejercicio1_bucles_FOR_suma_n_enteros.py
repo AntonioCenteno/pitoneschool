@@ -4,7 +4,7 @@
 '''
 Ejercicio 1.- Dado un número entero n≥0, escribir un programa para obtener la suma de los n primeros
 números naturales y escribir el resultado obtenido en la forma:
-
+La suma de los 5 primeros números naturales es: 15
 '''
 
 n=abs(int(raw_input("Numero entero: ")))
