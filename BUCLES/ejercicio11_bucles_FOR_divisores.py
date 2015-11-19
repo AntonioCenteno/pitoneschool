@@ -7,13 +7,13 @@ forma:
 Los divisores de 12 son: 1 2 3 4 6 12
 
 '''
-a=abs(int(raw_input("a: ")))
-b=abs(int(raw_input("b: ")))
-suma_producto=0
+numero=abs(int(raw_input("a: ")))
+divisores=''
 
-for i in range(a):
-    suma_producto += b
+for i in range(1,numero+1):
+    if numero%i==0:
+        divisores += str(i)+ " "
 
-print suma_producto
+print divisores
 
 
