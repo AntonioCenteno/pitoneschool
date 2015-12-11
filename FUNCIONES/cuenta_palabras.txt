@@ -1,0 +1,7 @@
+
+Haga un programa que repetidamente pida una palabra y que muestre cuántas veces aparece en un fichero de tipo texto llamado "cuenta palabras.txt". 
+El programa finalizará cuando la palabra a buscar sea un punto a secas. 
+
+Nota: se considerará palabra toda secuencia de caracteres separada por espacios, por ejemplo la palabra "es" dentro de la frase "esto es un test" 
+solamente aparece una vez. 
+Para simplificar suponga que no hay signos de puntuación ni caracteres no ASCII y considere palabra todo grupo de caracteres separado de otros por el espacio en blanco o fin de línea.
